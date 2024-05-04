@@ -13,11 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex2_Filas", "Ex2_Filas\Ex2_
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fibonacci_pilha", "Fibonacci_pilha", "{63F4E995-619D-4184-8BAB-CC2F12C2C807}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex3_Fibonacci_Pilha", "Ex3_Fibonacci_Pilha\Ex3_Fibonacci_Pilha.csproj", "{A826DAD1-B826-40C9-8B86-6F0AA239F015}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex3_Fibonacci_Pilha", "Ex3_Fibonacci_Pilha\Ex3_Fibonacci_Pilha.csproj", "{A826DAD1-B826-40C9-8B86-6F0AA239F015}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fibonacci_FIla", "Fibonacci_FIla", "{BA2C3501-686C-4592-A79D-38E3B872F518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4_Fibonacci_fila", "Ex4_Fibonacci_fila\Ex4_Fibonacci_fila.csproj", "{272EF440-15C9-4826-B673-2CBCA19DDAAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex4_Fibonacci_fila", "Ex4_Fibonacci_fila\Ex4_Fibonacci_fila.csproj", "{272EF440-15C9-4826-B673-2CBCA19DDAAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fila_Pilha", "Fila_Pilha", "{EEB605C3-BB21-423B-A4B4-CD8E15B21461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5_Fila_E_Pilha", "Ex5_Fila_E_Pilha\Ex5_Fila_E_Pilha.csproj", "{28516E8D-154D-4094-B201-0F71149472C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{272EF440-15C9-4826-B673-2CBCA19DDAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{272EF440-15C9-4826-B673-2CBCA19DDAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{272EF440-15C9-4826-B673-2CBCA19DDAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28516E8D-154D-4094-B201-0F71149472C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28516E8D-154D-4094-B201-0F71149472C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28516E8D-154D-4094-B201-0F71149472C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28516E8D-154D-4094-B201-0F71149472C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{BA757C48-87D2-4556-ACCF-964BE54A76AC} = {5F835AAD-EFEB-4425-8572-70947FCE73C5}
 		{A826DAD1-B826-40C9-8B86-6F0AA239F015} = {63F4E995-619D-4184-8BAB-CC2F12C2C807}
 		{272EF440-15C9-4826-B673-2CBCA19DDAAA} = {BA2C3501-686C-4592-A79D-38E3B872F518}
+		{28516E8D-154D-4094-B201-0F71149472C1} = {EEB605C3-BB21-423B-A4B4-CD8E15B21461}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDCD08F2-ADB0-43AC-87AB-24DF577BBFE1}
