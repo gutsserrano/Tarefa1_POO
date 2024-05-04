@@ -131,5 +131,78 @@ namespace Ex1_Pilhas
             }
         }
 
+        public Numero getMaior()
+        {
+            Numero maior, anterior;
+            if (!isEmpty())
+            {
+                maior = topo;
+                anterior = topo.getAnterior();
+                do
+                {
+                    if (anterior != null)
+                    {
+                        if (maior.getValor() < anterior.getValor())
+                        {
+                            maior = anterior;
+                        }
+                        else
+                        {
+                            anterior = anterior.getAnterior();
+                        }
+                    }
+                } while (anterior != null);
+                return maior;
+            }
+
+            return null;
+        }
+
+        public Numero getMenor()
+        {
+            Numero menor, anterior;
+            if (!isEmpty())
+            {
+                menor = topo;
+                anterior = topo.getAnterior();
+                do
+                {
+                    if (anterior != null)
+                    {
+                        if (menor.getValor() > anterior.getValor())
+                        {
+                            menor = anterior;
+                        }
+                        else
+                        {
+                            anterior = anterior.getAnterior();
+                        }
+                    }
+                } while (anterior != null);
+                return menor;
+            }
+
+            return null;
+        }
+
+        public float getMedia()
+        {
+            float sum = 0;
+            Numero aux = topo;
+
+            if (!isEmpty())
+            {
+                do
+                {
+                    sum += aux.getValor();
+                    aux = aux.getAnterior();
+                } while (aux != null);
+
+                return sum / getQtdNumeros();
+            }
+
+            return 0;
+        }
+
     }
 }

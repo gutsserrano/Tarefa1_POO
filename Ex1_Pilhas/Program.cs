@@ -59,7 +59,7 @@
                 Console.WriteLine("2 - Remover Numeros da pilha 1");
                 Console.WriteLine("3 - Adicionar Numeros na pilha 2");
                 Console.WriteLine("4 - Remover Numeros da pilha 2");
-                Console.WriteLine("5 - Imprimir elementos das pilhas");
+                Console.WriteLine("5 - Imprimir elementos, menores, maiores e média das pilhas");
                 Console.WriteLine("6 - Comparar tamanho das duas pilhas");
                 Console.WriteLine("7 - Transferir elementos de uma pilha para uma terceira");
                 Console.WriteLine("8 - Ver os elementos da terceira pilha");
@@ -107,10 +107,27 @@
         static void imprimirPilhas(Pilha p1, Pilha p2)
         {
             Console.Clear();
-            Console.WriteLine("============Pilha 1===========");
+            Console.WriteLine("\n============Pilha 1===========");
             p1.print();
-            Console.WriteLine("============Pilha 2===========");
+
+            if (!p1.isEmpty())
+            {
+
+                Console.WriteLine($"Maior: {p1.getMaior().getValor()}");
+                Console.WriteLine($"Menor: {p1.getMenor().getValor()}");
+                Console.WriteLine($"Media: {p1.getMedia()}");
+            }
+
+            Console.WriteLine("\n============Pilha 2===========");
             p2.print();
+
+            if (!p1.isEmpty())
+            {
+
+                Console.WriteLine($"Maior: {p2.getMaior().getValor()}");
+                Console.WriteLine($"Menor: {p2.getMenor().getValor()}");
+                Console.WriteLine($"Media: {p2.getMedia()}");
+            }
 
             Console.ReadKey();
         }

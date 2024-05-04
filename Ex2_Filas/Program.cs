@@ -59,7 +59,7 @@
                 Console.WriteLine("2 - Remover Numeros da fila 1");
                 Console.WriteLine("3 - Adicionar Numeros na fila 2");
                 Console.WriteLine("4 - Remover Numeros da fila 2");
-                Console.WriteLine("5 - Imprimir elementos das filas");
+                Console.WriteLine("5 - Imprimir elementos, menores, maiores e média das filas");
                 Console.WriteLine("6 - Comparar tamanho das duas filas");
                 Console.WriteLine("7 - Transferir elementos de uma fila para uma terceira");
                 Console.WriteLine("8 - Ver os elementos da terceira fila");
@@ -107,10 +107,26 @@
         static void imprimirPilhas(Fila f1, Fila f2)
         {
             Console.Clear();
-            Console.WriteLine("============Fila 1===========");
+            Console.WriteLine("\n============Fila 1===========");
             f1.Print();
-            Console.WriteLine("============Fila 2===========");
+
+            if (!f1.IsEmpty())
+            {
+
+                Console.WriteLine($"Maior: {f1.getMaior().getValor()}");
+                Console.WriteLine($"Menor: {f1.getMenor().getValor()}");
+                Console.WriteLine($"Media: {f1.getMedia()}");
+            }
+
+            Console.WriteLine("\n============Fila 2===========");
             f2.Print();
+
+            if (!f2.IsEmpty())
+            {
+                Console.WriteLine($"Maior: {f2.getMaior().getValor()}");
+                Console.WriteLine($"Menor: {f2.getMenor().getValor()}");
+                Console.WriteLine($"Media: {f2.getMedia()}");
+            } 
 
             Console.ReadKey();
         }

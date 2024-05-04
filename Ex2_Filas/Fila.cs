@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -135,6 +136,79 @@ namespace Ex2_Filas
         public int getQtdNumeros()
         {
             return qtdNumeros;
+        }
+
+        public Numero getMaior()
+        {
+            Numero maior, proximo;
+            if (!IsEmpty())
+            {
+                maior = head;
+                proximo = head.getNext();
+                do
+                {
+                    if (proximo != null)
+                    {
+                        if (maior.getValor() < proximo.getValor())
+                        {
+                            maior = proximo;
+                        }
+                        else
+                        {
+                            proximo = proximo.getNext();
+                        }
+                    }
+                } while (proximo != null);
+                return maior;
+            }
+
+            return null;
+        }
+
+        public Numero getMenor()
+        {
+            Numero menor, proximo;
+            if (!IsEmpty())
+            {
+                menor = head;
+                proximo = head.getNext();
+                do
+                {
+                    if (proximo != null)
+                    {
+                        if (menor.getValor() > proximo.getValor())
+                        {
+                            menor = proximo;
+                        }
+                        else
+                        {
+                            proximo = proximo.getNext();
+                        }
+                    }
+                } while (proximo != null);
+                return menor;
+            }
+
+            return null;
+        }
+
+        public float getMedia()
+        {
+            float sum = 0;
+            Numero aux = head;
+
+            if (!IsEmpty())
+            {
+                do
+                {
+                    sum += aux.getValor();
+                    aux = aux.getNext();
+                } while(aux != null);
+
+                return sum / getQtdNumeros();
+            }
+
+            return 0;
         }
     }
 }
